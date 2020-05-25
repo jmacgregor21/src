@@ -1,0 +1,61 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Electrical Subsystem</title>
+	
+    <script src="https://use.typekit.net/kxf0iwn.js"></script>
+    <script>try{Typekit.load({ async: true });}catch(e){}</script>
+	
+	<link href="styles.css" rel="stylesheet" type="text/css">
+</head>
+
+<body class="electrical-body">
+	
+	<!-- Navigation Menu -->
+    <header>
+        <nav class="site-nav">
+            <ul>
+				<li><a href="index.html">HOME</a></li>
+				<li><a href="mechanical.html">MECHANICAL</a></li>
+				<li><a href="electrical.html">ELECTRICAL</a></li>
+				<li><a href="software.html">SOFTWARE</a></li>
+			</ul>
+        </nav>
+    </header>
+	
+	<main>
+        <!-- Hero -->
+        <section class="electrical-head">
+        	<div class="sub-head-content">
+				<h1 class="h1-sub">Electrical Subsystem</h1>
+            </div>
+        </section>
+
+        <!-- Blog Post -->
+        <section class="sub">
+        <div class="sub-text">
+                <p>
+				This subsystem was probably the most exciting for me, and the most subject to limitations with regard to components, although this was mitigated as much as possible. The electrical subsystem consisted of 6 main circuits, as well as some standard LED circuits and a PIC24 microcontroller to power and control. The four main functions each have their own circuit, outlined below.
+				<br><br> 
+				<img src="images/four_circuits.jpg" class="center">
+				<br><br>
+				The twist circuit was relatively simple, only needing to hook up a potentiometer to an analog pin on the PIC board. The bop circuit required some more thinking, as it couldn’t “float” at a value. To prevent that from happening, a pull-down resistor was implemented on the pin that corresponded to the detection of a button press. This was also wired up in a way that would tell the user when it had completed this, as the button itself would light up when pressed. For the pull circuit, this was a simple matter of creating a connecting circuit with another pull-down resistor. The shout circuit was the most complex, as it required some amplification as well as its own specified circuit. The amplification was achieved via an LMC6484 op-amp.
+				<br><br>
+				<img src="images/two_circuits.jpg" class="center">	
+				<br><br>
+				The other two main circuits were the speaker driver and the astable multivibrator, as extra sort of “learning” circuits for me. The speaker driver circuit, after much experimentation, was created using a Darlington pair, shown below, with the speaker serving as a bias resistor. While this theoretically worked by driving it with a square wave in the software via a digital pin, the speaker was not powerful enough to hear the sound unless you were very close to it. The astable multivibrator circuit was quite interesting, and I formed it with two 200ohm resistors, two 1kohm resistors, and two 220uF capacitors. The choosing of these various values affect the frequency at which the oscillation happens, but these values provide a fast but visible switching between the two LEDs.
+				<br><br>
+				As PCB orders weren't really an option, all of this was completed via breadboard for prototyping, and then it had to be soldered onto protoboard. These were then led over wires to the respective pins on the PIC24.
+				<br><br>
+				</p>
+            </div>
+        </section>
+		
+		<!-- Topics -->
+    </main>
+	
+	<footer class="footer-e"></footer>
+	
+</body>
+</html>

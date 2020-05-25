@@ -1,0 +1,61 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Mechanical Subsystem</title>
+	
+    <script src="https://use.typekit.net/kxf0iwn.js"></script>
+    <script>try{Typekit.load({ async: true });}catch(e){}</script>
+	
+	<link href="styles.css" rel="stylesheet" type="text/css">
+</head>
+
+<body class="software-body">
+	
+	<!-- Navigation Menu -->
+    <header>
+        <nav class="site-nav">
+            <ul>
+				<li><a href="index.html">HOME</a></li>
+				<li><a href="mechanical.html">MECHANICAL</a></li>
+				<li><a href="electrical.html">ELECTRICAL</a></li>
+				<li><a href="software.html">SOFTWARE</a></li>
+			</ul>
+        </nav>
+    </header>
+	
+	<main>
+        <!-- Hero -->
+        <section class="software-head">
+        	<div class="sub-head-content">
+				<h1 class="h1-sub">Software Subsystem</h1>
+            </div>
+        </section>
+
+        <!-- Blog Post -->
+        <section class="sub">
+        <div class="sub-text">
+                <p>
+				The game functions are defined by a finite state machine (FSM) that takes care of each action. The main states are listed below:
+				<br><br> 
+				- Start/game over <br>
+				- Main/chooser <br>
+				- Bop <br>
+				- Twist <br>
+				- Pull <br>
+				- Shout
+				<br><br> 
+				These states are handled by a “state” variable that changes based on the main/chooser function. When the game is plugged in/started up, it goes into the joint start and game over state, which is displayed by the 3 red LEDs at the top turned on. Hitting the button on the side will start the game, which then switches it into the main state. For this and the rest of the states, the two blue LEDs on the top row will blink back and forth with the astable multivibrator circuit, to indicate that a game is currently happening. The next four states are then determined by a random number generator, and the output of that causes the state to switch to that particular command. The LED corresponding to each command will light up to let the user know they need to perform that action. When the command is completed, the state switches back to the choosing state. This cycle is performed over and over until a set counter variable hits a certain number that corresponds to the game time, at which point the start/game over state will return. This is displayed to the user by the red LEDs again. There is an optional implementation of a speaker providing the user with another method of communication for commands and time left, but unfortunately the speaker I had was not powerful enough to be useful to the user. 
+				<br><br>
+				The link to my GitHub is listed in the footer of my page.
+				</p>
+            </div>
+        </section>
+		
+		<!-- Topics -->
+    </main>
+	
+	<footer class="footer-s"></footer>
+	
+</body>
+</html>

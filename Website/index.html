@@ -1,0 +1,126 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>BOP-IT</title>
+    
+    <script src="https://use.typekit.net/kxf0iwn.js"></script>
+    <script>try{Typekit.load({ async: true });}catch(e){}</script>
+
+    <link href="styles.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+    
+    <!-- Navigation Menu -->
+    <header>
+      <a class="site-logo">
+          <img src="images/Asset 1@4x.png" alt="">
+      </a>
+        <nav class="site-nav">
+            <ul>
+				<li><a href="index.html">HOME</a></li>
+				<li><a href="mechanical.html">MECHANICAL</a></li>
+				<li><a href="electrical.html">ELECTRICAL</a></li>
+				<li><a href="software.html">SOFTWARE</a></li>
+			</ul>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Hero -->
+        <section class="hero">
+        	<div class="hero-content">
+                <h2 class="h2-hero">A Reimagining of the Original</h2>
+				<h1 class="h1-hero">Bop-It</h1>
+				<h3 class="h3-hero">Elecanisms &#45; Spring 2020</h3>
+            </div>
+        </section>
+
+        <!-- Intro -->
+        <section class="intro">
+        <div class="intro-text">
+                <p>Welcome to my implementation of Bop-It! This whimsical little project was imagined and created over the course of 5-6 weeks, and carried out over remote learning with somewhat limited access to resources. A quick overview of the game is outlined below; feel free to take a look in the other sections of this website to get a more detailed look into its creation.</p>
+            </div>
+        </section>
+
+        <!-- Artwork -->
+        <section class="artworks">
+            <article class="mechanical-art">
+                <div class="artwork-piece">
+                    <figure>
+                    	<img src="images/mech-assembly.PNG" alt="Put in alt text">
+                    </figure>
+                </div>
+                <div class="artwork-description">
+                	<h2 class="artwork-title">Mechanical Subsystem</h2>
+					<p class="artwork-text"></p>
+					<a class ="see-more" href="mechanical.html">See More</a>
+                </div>
+            </article>
+        </section>        
+		<section class="artworks">
+            <article class="electrical-art">
+                <div class="artwork-piece">
+                    <figure>
+                    	<img src="images/electrical-hero.png" alt="Put in alt text">
+                    </figure>
+                </div>
+                <div class="artwork-description">
+                	<h2 class="artwork-title">Electrical Subsystem</h2>
+					<p class="artwork-text"></p>
+					<a class ="see-more" href="electrical.html">See More</a>
+                </div>
+            </article>
+        </section>        
+		<section class="artworks">
+            <article class="software-art">
+                <div class="artwork-piece">
+                    <figure>
+                    	<img src="images/software-hero.jpg" alt="Put in alt text">
+                    </figure>
+                </div>
+                <div class="artwork-description">
+                	<h2 class="artwork-title">Software Subststem</h2>
+					<p class="artwork-text"></p>
+					<a class ="see-more" href="software.html">See More</a>
+                </div>
+            </article>
+        </section>
+    </main>
+	
+	<section class="intro">
+        <div class="intro-text">
+				<p>
+				Next Steps:
+				<br><br>
+				The next steps for this project would first and foremost be the implementation of a 7-segment display; this was not part of the original game due to their exhaustive use of I/O pins on the microcontroller, which was not possible in this design. The 7-segment display would allow the user to see a countdown of time as well as a score after time has run out. Further steps would also include the communication and implementation of a peripheral Arduino board, in order to have extra hardware control pins, as well as more complex software implementations, and serial communication. A more powerful speaker, a twist-it function with spring action, and the ability to run off of an internal power source are other next steps I would like to implement with more time and resources.
+				</p>
+            </div>
+        </section>
+
+    <!-- Site Footer (hidden for lesson) -->
+    <footer>
+    <div class="footer-content">
+            <ul class="footer-social">
+                <li>
+                    <a href="https://github.com/jmacgregor21/src">
+                        Github
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.linkedin.com/in/jillian-macgregor-054480b2/">
+                        LinkedIn
+                    </a>
+                </li>
+            </ul>
+            <div class="footer-info">
+                <p class="footer-credit">Website design by Jillian MacGregor</p>
+                <p class="footer-legal">&copy; 2016 Adobe Systems Incorporated. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+    
+</body>
+</html>
