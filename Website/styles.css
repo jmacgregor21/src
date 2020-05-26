@@ -218,6 +218,24 @@ header {
   letter-spacing: .325em;
   text-transform: uppercase;
 }
+.next-steps {
+  position: relative;
+  color: #343144;
+  background: #fff;
+  padding: 6em 6em 6em;
+}
+.steps-text {
+  position: relative;
+}
+.next-steps p {
+  font-family: 'acumin-pro-extra-condensed', sans-serif;
+  font-size: 1.5em;
+  line-height: 1.2;
+  position: relative;
+  z-index: 200;
+  text-align: center;
+  letter-spacing: .125em;
+}
 .sub {
   position: relative;
   color: #343144;
